@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #251B37;
+    color:#FFECEF;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.home{
+    width: 100%;
+}
+
+.home h1{
+    padding: 30px 0;
+    text-align: center;
+    font-size: 35px;
+}
+
+.home .navbar{
+    max-width: 100%;
+    height: 60px;
+    background: #FFCACA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .navbar .links{
+    display: flex;
+    margin-left: 10px;
+    background-color: #FFCACA;
+}
+
+.home .navbar .links li{
+    display: block;
+    background-color: #FFCACA;
+    padding: 5px 15px;
+}
+
+.home .navbar .links li a{
+    font-size: 22px;
+    background-color: #FFCACA;
+    color:#372948;
+    padding:8px;
+    border-radius: 10px;
+}
+
+.home .navbar .links li a:hover{
+    background-color: #372948;
+    color:#FFECEF;
+}
+
+.home .content{
+    width: 80%;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.home .content p{
+    margin-top: 25px;
+    text-align: justify;
+    font-size: 24px;
+}
+
+.stick{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.stick + .content{
+    padding-top: 60px;
+}
+
+@media(max-width:768px){
+
+    .home .navbar{
+        height:190px;
+    }
+
+    .home .navbar .links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home .navbar .links li{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .home .content{
+        width: 80%;
+    }
+
+}
